@@ -29,6 +29,15 @@ window.addEventListener('load', () => {
         const imagenRecom3 =document.getElementById('img_recomedation3');
         const imagenRecom4 =document.getElementById('img_recomedation4');
         const imagenRecom5 =document.getElementById('img_recomedation5');
+        const imagenRecomIdeal =document.getElementById('destino__ideal');
+
+        const amigoInicial1 =document.getElementById('amigo_item1');
+        const amigoInicial2 =document.getElementById('amigo_item2');
+        const amigoInicial3 =document.getElementById('amigo_item3');
+
+        const amigoText1 =document.getElementById('amigoText1');
+        const amigoText2 =document.getElementById('amigoText2');
+        const amigoText3 =document.getElementById('amigoText3');
 
 
         moneyRange.addEventListener('input', updateComparison);
@@ -195,8 +204,13 @@ window.addEventListener('load', () => {
 
             resultsTravel.sort(orderResults)
             
-            
+            amigoInicial1.innerHTML=results[0].name.substring(0, 2);
+            amigoInicial2.innerHTML=results[1].name.substring(0, 2);
+            amigoInicial3.innerHTML=results[2].name.substring(0, 2);
 
+            amigoText1.innerHTML=results[0].name;
+            amigoText2.innerHTML=results[1].name;
+            amigoText3.innerHTML=results[2].name;
             for(var i=0;i<3;i++){
                 console.log(results[i].name,results[i].result);
             }
@@ -207,7 +221,9 @@ window.addEventListener('load', () => {
             imagenRecom3.src="/imagenes/"+resultsTravel[0].name+'.png';
             imagenRecom4.src="/imagenes/"+resultsTravel[0].name+'.png';
             imagenRecom5.src="/imagenes/"+resultsTravel[0].name+'.png';
-
+            imagenRecomIdeal.src="/imagenes/"+resultsTravel[0].name+'Ideal.png';
+            
+           
             console.log("Tu destino soñado es:  "+resultsTravel[0].name);
         }
 
