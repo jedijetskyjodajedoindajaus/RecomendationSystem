@@ -14,7 +14,7 @@
 
 <body>
 
-    <section class="pantallaRecomendaciones">
+    <section id="presupuesto" class="pantallaRecomendaciones">
         <div class=header>
             <div class="header__logo">
                 <a href="index.html"> <img class="header__logoimg" src="./imagenes/logo.png" alt=""> </a>
@@ -40,29 +40,299 @@
                 </div>
                 <div class="mapTodo">
                     <img class="mapaTodo_1" src="imagenes/mapaEntero 1.png">
-                    <a href="hospedaje.html"><div class="next">  
-                         <img src="/imagenes/next.png">
-                        </a>
-                    </div>
-
+                    <a href="#hospedaje">
+                        <div class="next">
+                            <img src="/imagenes/next.png">
+                    </a>
                 </div>
 
-                <div class="range__container">
-                    <p class="range_titulo"> ¿Qué tanto estarías dispuesto a pagar por tu viaje?</p>
-                    <input class="input__range" type="range">
-                    <div class="valores_range">
-                        <p class="range__text"> precio 1</p>
-                        <p class="range__text"> precio 2</p>
-                        <p class="range__text"> precio 3</p>
-                    </div>
+            </div>
 
+            <div class="range__container">
+              
+                <p class="range_titulo"> ¿Qué tanto estarías dispuesto a pagar por tu viaje?</p>
+                <input class="dinero" id="money" type="range" min="1" max="100" step="1" value="50">
+                <div class="valores_range">
+                    <p class="range__text"> precio 1</p>
+                    <p class="range__text"> precio 2</p>
+                    <p class="range__text"> precio 3</p>
                 </div>
 
             </div>
 
         </div>
 
+        </div>
+
+    </section>
+
+    <section id="hospedaje" class="pantallaHospedaje">
+
+        <div class="hospedaje">
+            <div class="hospedaje_top">
+                <div class="hospedaje_title">
+                    <img class="hospedaje_img" src="imagenes/2.png">
+                    <p class="hospedaje_title"> ¿Dónde quieres dormir? </p>
+                </div>
+                <div class="hospedaje_progress">
+                    <progress class="hospedaje_progreso" max="100" value="33.33"></progress>
+                    <div class="hospedajeProgress_text_container">
+                        <p class="hospedajeProgress_text"> Presupuesto</p>
+                        <p class="hospedajeProgress_text"> Hospedaje</p>
+
+                    </div>
+
+                </div>
+
+                <div class="hospedaje_mapTodo">
+
+                    <a href="#presupuesto">
+                        <img class="hospedaje_back" src="/imagenes/back.png">
+                    </a>
+
+                    <img class="img_recomedation" src="imagenes/Cartagena.png">
+                    <a href="#tiempo">
+                        <div class="hospedaje_next">
+                            <img src="/imagenes/next.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hospedajeRange__container">
+                <p class="hospedajeRange_titulo"> ¿Qué tanto estarías dispuesto a hospedarte en un hostal?</p>
+                <input class="hostal" id="hostal" type="range"   min="1" max="100" step="1" value="50">
+                <div class="hospedajeValores_range">
+                    <p class="hospedajeRange__text"> No me gustan los hostales</p>
+                    <p class="hospedajeRange__text"> No me importa</p>
+                    <p class="hospedajeRange__text"> Me encantaría</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <section id="tiempo" class="pantallaTiempo">
+        <div class="tiempo">
+            <div class="tiempo_top">
+                <div class="tiempo_title">
+                    <img class="tiempo_img" src="imagenes/3.png">
+                    <p class="tiempo_title"> ¿Con cuánto tiempo andas? </p>
+                </div>
+                <div class="tiempoProgress">
+                    <progress class="tiempoProgreso" max="100" value="50"></progress>
+                    <div class="tiempoProgress_text_container">
+                        <p class="tiempoProgress_text"> Presupuesto</p>
+                        <p class="tiempoProgress_text"> Hospedaje</p>
+                        <p class="tiempoProgress_text"> Duración</p>
+
+                    </div>
+                </div>
+
+                <div class="tiempo_mapTodo">
+
+                    <a href="#hospedaje">
+                        <img class="tiempo_back" src="/imagenes/back.png">
+                    </a>
+
+                    <img class="img_recomedation" src="imagenes/Cartagena.png">
+                    <a href="#carretera">
+                        <div class="tiempo_next">
+                            <img src="/imagenes/next.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="tiempoRange__container">
+                <p class="tiempoRange_titulo"> ¿Cuánto quieres que dure tu viaje?</p>
+                <input class="duracion" id="time" type="range"   min="1" max="100" step="1" value="50">
+                <div class="valores_range">
+                    <p class="tiempoRange__text"> Poco</p>
+                    <p class="tiempoRange__text"> Duración media</p>
+                    <p class="tiempoRange__text"> Una larga estadía</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section id=carretera class="pantallaCarretera">
+        <div class="carretera">
+            <div class="carretera_top">
+                <div class="carretera_title">
+                    <img class="carretera_img" src="imagenes/4.png">
+                    <p class="carretera_title"> ¿Te gustan los viajes en carretera? </p>
+                </div>
+                <div class="carreteraProgress">
+                    <progress class="carreteraProgreso" max="100" value="66.6"></progress>
+                    <div class="carreteraProgress_text_container">
+                        <p class="carreteraProgress_text"> Presupuesto</p>
+                        <p class="carreteraProgress_text"> Hospedaje</p>
+                        <p class="carreteraProgress_text"> Duración</p>
+                        <p class="carreteraProgress_text"> Carretera</p>
+
+                    </div>
+                </div>
+
+                <div class="carretera_mapTodo">
+
+                    <a href="#tiempo">
+                        <img class="carretera_back" src="/imagenes/back.png">
+                    </a>
+
+                    <img class="img_recomedation" src="imagenes/Cartagena.png">
+                    <a href="#clima">
+                        <div class="carretera_next">
+                            <img src="/imagenes/next.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="carreteraRange__container">
+                <p class="carreteraRange_titulo"> ¿Cuánto tiempo estás dispuesto a viajar en bus?</p>
+                <input class="bus" id="bus" type="range"   min="1" max="100" step="1" value="50">
+                <div class="carreteraValores_range">
+                    <p class="carreteraRange__text"> Poco</p>
+                    <p class="carreteraRange__text"> Distancias medias</p>
+                    <p class="carreteraRange__text"> Me agrada viajar en bus</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section id="clima" class="pantallaClima">
+        <div class="clima">
+            <div class="clima_top">
+                <div class="clima_title">
+                    <img class="clima_img" src="imagenes/5.png">
+                    <p class="clima_title"> Ya casi tenemos tu destino ideal</p>
+                </div>
+                <div class="climaProgress">
+                    <progress class="climaProgreso" max="100" value="82.6"></progress>
+                    <div class="climaProgress_text_container">
+                        <p class="climaProgress_text"> Presupuesto</p>
+                        <p class="climaProgress_text"> Hospedaje</p>
+                        <p class="climaProgress_text"> Duración</p>
+                        <p class="climaProgress_text"> Carretera</p>
+                        <p class="climaProgress_text"> El Clima</p>
+
+                    </div>
+                </div>
+
+                <div class="clima_mapTodo">
+
+                    <a href="#carretera">
+                            <img class="clima_back" src="/imagenes/back.png">
+                    </a>
+
+                    <img class="img_recomedation" src="imagenes/Cartagena.png">
+                    <a href="#comer">
+                        <div class="clima_next">
+                            <img src="/imagenes/next.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="climaRange__container">
+                <p class="climaRange_titulo"> ¿Qué tanto te gustan los viajes de clima caliente?</p>
+                <input class="clima" id="clima" type="range"   min="1" max="100" step="1" value="50">
+                <div class="climaValores_range">
+                    <p class="climaRange__text"> Poco</p>
+                    <p class="climaRange__text"> No me importa el clima</p>
+                    <p class="climaRange__text"> Me enantan</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section id="comer" class="pantallaComer">
+        <div class="comer">
+            <div class="comer_top">
+                <div class="comer_title">
+                    <img class="comer_img" src="imagenes/6.png">
+                    <p class="comer_title"> Por último ¿Qué te gustaría comer?    :D</p>
+                </div>
+                <div class="comerProgress">
+                    <progress class="comerProgreso" max="100" value="100"></progress>
+                    <div class="comerProgress_text_container">
+                        <p class="comerProgress_text"> Presupuesto</p>
+                        <p class="comerProgress_text"> Hospedaje</p>
+                        <p class="comerProgress_text"> Duración</p>
+                        <p class="comerProgress_text"> Carretera</p>
+                        <p class="comerProgress_text"> El Clima</p>
+                        <p class="comerProgress_text"> La Comida</p>
+                        
+
+                    </div>
+                </div>
+
+                <div class="comer_mapTodo">
+
+                    <a href="#clima">
+                            <img class="comer_back" src="/imagenes/back.png">
+                    </a>
+
+                    <img class="img_recomedation" src="imagenes/Cartagena.png">
+                    <a href="#comer">
+                        <div class="comer_next">
+                            <img src="/imagenes/next.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="#emparejar">
+                <button class="buscarBTN" type="button">Ver mis compañeros de viaje</button>
+            </a>
+        
+            </div>
+
+            <div class="comerRange__container">
+                <p class="comerRange_titulo"> ¿Qué tan dispuesto estás a probar comidas autóctonas de la zona que visitas? </p>
+                <input class="comida" id="food" type="range"   min="1" max="100" step="1" value="50">
+                <div class="comerValores_range">
+                    <p class="comerRange__text"> No me gustaria</p>
+                    <p class="comerRange__text"> No me importa</p>
+                    <p class="comerRange__text"> Me enantaría</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
 
 
     </section>
-    </html>
+
+
+
+
+
+
+</html>
